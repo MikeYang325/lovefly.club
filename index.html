@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080b0f">
+  <meta name="theme-color" content="#0b0c0d">
   <meta name="description" content="LOVEFLY.CLUB — For those who simply love to fly.">
   <title>LOVEFLY.CLUB — For those who simply love to fly.</title>
   <link rel="stylesheet" href="./styles.css">
@@ -11,56 +11,74 @@
 <body>
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="atmosphere" aria-hidden="true"></div>
-      <div class="horizon" aria-hidden="true"></div>
+      <div class="sky-glow" aria-hidden="true"></div>
+      <div class="flight-grid" aria-hidden="true"></div>
 
-      <header class="flight-rail" aria-label="LoveFly Club">
-        <a class="wordmark" href="/" aria-label="LoveFly Club home">LOVEFLY<span>.CLUB</span></a>
-        <div class="flight-level" aria-label="Flight level 400">
-          <span class="beacon"></span>
+      <header class="masthead">
+        <a class="brand" href="/" aria-label="LOVEFLY.CLUB home">
+          <span>LOVEFLY</span><small>.CLUB</small>
+        </a>
+        <div class="status" aria-label="Cruise altitude">
+          <span class="status-light"></span>
           <span>CRUISE</span>
           <strong>FL400</strong>
         </div>
       </header>
 
-      <div class="hero-copy">
-        <p class="eyebrow">FOR PEOPLE WHO LOVE FLYING</p>
-        <h1 id="hero-title">LOVEFLY<span>.CLUB</span></h1>
-        <p class="hero-line">For those who simply love to fly.</p>
-        <p class="topics" aria-label="Topics">Flights <i>·</i> Miles <i>·</i> Aircraft <i>·</i> Tools</p>
+      <div class="hero-layout">
+        <div class="hero-title-wrap">
+          <p class="kicker">AVIATION, WITHOUT THE CORPORATE PART.</p>
+          <h1 id="hero-title">
+            <span>LOVE</span>
+            <span>FLY<em>.</em></span>
+          </h1>
+        </div>
+
+        <div class="hero-aside">
+          <p class="lead">For those who simply<br>love to fly.</p>
+          <p class="manifesto">Flights, miles, aircraft, routes and small tools made for people who still look out the window.</p>
+        </div>
       </div>
 
-      <div class="hero-foot">
-        <p class="altitude-note">Made somewhere between<br>the ground and FL400.</p>
-        <a class="scroll-cue" href="#club" aria-label="Explore LoveFly Club">
-          <span>EXPLORE</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 4v15m0 0 6-6m-6 6-6-6"/>
-          </svg>
-        </a>
+      <div class="cruise-scale" aria-hidden="true">
+        <span>GROUND</span>
+        <i></i><i></i><i></i><i></i><i></i>
+        <strong>FL400</strong>
       </div>
+
+      <footer class="hero-footer">
+        <p>Made somewhere between the ground and FL400.</p>
+        <a href="#club" class="discover">DISCOVER <span>↓</span></a>
+      </footer>
     </section>
 
     <section class="club" id="club" aria-labelledby="club-title">
-      <div class="section-index" aria-hidden="true">00 / THE CLUB</div>
-      <div class="club-copy">
-        <h2 id="club-title">Built for people<br>who love flying.</h2>
-        <p>
-          Not an airline. Not a traditional flying club.<br>
-          A quiet home for flights, miles, aircraft, routes, tools and the journeys worth remembering.
-        </p>
+      <div class="club-intro">
+        <p class="section-label">01 / THE CLUB</p>
+        <h2 id="club-title">Flying is<br>the point.</h2>
+        <div class="club-body">
+          <p>LOVEFLY.CLUB is a personal aviation playground for frequent flyers, AvGeeks and anyone who thinks the journey is part of the destination.</p>
+          <p>Not an airline. Not a traditional flying club. Just useful things, obsessive details and a shared reason to keep looking up.</p>
+        </div>
       </div>
-      <div class="future" aria-label="Future areas">
-        <span>TOOLS</span>
-        <span>FLIGHTS</span>
-        <span>LOGBOOK</span>
-        <span>MILES</span>
-        <span>PROJECTS</span>
-        <span>TRIPS</span>
+
+      <div class="deck" aria-label="Future areas">
+        <div class="deck-head">
+          <span>FLIGHT DECK</span>
+          <span>BUILDING / 2026</span>
+        </div>
+        <div class="deck-row"><span>01</span><strong>TOOLS</strong><small>UTILITIES FOR THE JOURNEY</small></div>
+        <div class="deck-row"><span>02</span><strong>FLIGHTS</strong><small>ROUTES, HISTORY & DATA</small></div>
+        <div class="deck-row"><span>03</span><strong>LOGBOOK</strong><small>EVERY FLIGHT, REMEMBERED</small></div>
+        <div class="deck-row"><span>04</span><strong>MILES</strong><small>STATUS, POINTS & PROGRESS</small></div>
+        <div class="deck-row"><span>05</span><strong>TRIPS</strong><small>PLACES, ROUTES & STORIES</small></div>
+        <div class="deck-row"><span>06</span><strong>PROJECTS</strong><small>THINGS BUILT ALONG THE WAY</small></div>
       </div>
+
       <footer class="site-footer">
-        <span>LOVEFLY.CLUB</span>
-        <span>FOR THOSE WHO SIMPLY LOVE TO FLY.</span>
+        <div class="footer-brand">LOVEFLY<span>.CLUB</span></div>
+        <p>FOR PEOPLE WHO LOVE FLYING.</p>
+        <p>EST. 2026</p>
       </footer>
     </section>
   </main>
