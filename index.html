@@ -5,68 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#2B7DE9">
   <meta name="description" content="LoveFly.club — 记录每一次起飞，也计算每一次可能。">
-  <title>LoveFly.club · 记录每一次起飞，也计算每一次可能</title>
+  <title>LoveFly.club — 记录每一次起飞，也计算每一次可能。</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-photo" src="./assets/hero-wing.jpg" alt="高空蓝天下的银白机翼与红色翼尖">
-      <div class="hero-overlay" aria-hidden="true"></div>
+      <img class="hero-photo" src="./assets/hero-wing-original.webp" alt="高空蓝天下的银白机翼与红色翼尖">
+      <div class="hero-shade" aria-hidden="true"></div>
 
       <header class="topbar">
-        <a class="brand" href="/" aria-label="LoveFly.club 首页">
-          LoveFly<span class="brand-dot">.</span><span class="brand-club">club</span>
-        </a>
-        <nav class="topnav" aria-label="预留导航">
-          <span>Tools</span>
-          <span>Flight Log</span>
-          <span>Stories</span>
+        <a class="brand" href="/" aria-label="LoveFly.club 首页">LoveFly<span>.</span><em>club</em></a>
+        <nav class="topnav" aria-label="主要入口">
+          <span>Tools</span><i>·</i><span>Flight Log</span><i>·</i><span>Stories</span>
         </nav>
       </header>
 
       <div class="hero-copy">
         <h1 id="hero-title">Love flying.<br>Keep flying.</h1>
-        <p class="hero-line">For those who simply love to fly.</p>
+        <p>For those who simply love to fly.</p>
       </div>
 
-      <p class="hero-signature">Made somewhere between the ground and FL400.</p>
+      <p class="altitude-note">Made somewhere between the ground and FL400.</p>
     </section>
 
-    <div class="sky-transition" aria-hidden="true"></div>
+    <div class="topic-bar" aria-label="LoveFly topics">
+      <span>Flights</span><i>·</i><span>Miles</span><i>·</i><span>Aircraft</span><i>·</i><span>Tools</span>
+    </div>
 
-    <section class="content-shell">
-      <div class="topic-strip" aria-label="LoveFly topics">
-        <span>Flights</span><i>·</i><span>Miles</span><i>·</i><span>Aircraft</span><i>·</i><span>Tools</span>
+    <section class="photo-wall" aria-label="飞行照片墙">
+      <figure class="photo photo-main">
+        <img src="./assets/hero-wing-original.webp" alt="机翼与云海">
+        <figcaption><span>In flight</span><small>Wing · Sky · Cloud</small></figcaption>
+      </figure>
+      <figure class="photo photo-sky">
+        <img src="./assets/hero-wing-original.webp" alt="高空蓝天">
+        <figcaption><span>Above the clouds</span><small>FL400</small></figcaption>
+      </figure>
+      <figure class="photo photo-wingtip">
+        <img src="./assets/hero-wing-original.webp" alt="红色翼尖">
+        <figcaption><span>Wingtip</span><small>Red on blue</small></figcaption>
+      </figure>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="section-kicker">LoveFly.club</p>
+        <h2 id="intro-title">记录每一次起飞，<br>也计算每一次可能。</h2>
       </div>
-
-      <!-- 照片墙将在更多个人飞行照片加入后插在这里，Hero 之后优先展示影像。 -->
-
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-heading">
-          <p class="section-label">LoveFly.club</p>
-          <h2 id="intro-title">记录每一次起飞，<br>也计算每一次可能。</h2>
-        </div>
-        <div class="intro-copy">
-          <p class="intro-lead">常客工具 × 飞行数据库</p>
-          <p>日志、航线、里程、会籍，以及为下一次起飞准备的小工具。</p>
-        </div>
-      </section>
-
-      <section class="entries" aria-label="预留功能入口">
-        <div class="entry"><span>Gate 01</span><strong>Calculator</strong><small>/calculator</small></div>
-        <div class="entry"><span>Gate 02</span><strong>Routes</strong><small>/routes</small></div>
-        <div class="entry"><span>Gate 03</span><strong>Flight Log</strong><small>/flight-log</small></div>
-        <div class="entry"><span>Gate 04</span><strong>Miles</strong><small>/earn-and-burn</small></div>
-        <div class="entry"><span>Gate 05</span><strong>Airports</strong><small>/airports</small></div>
-        <div class="entry"><span>Gate 06</span><strong>Stories</strong><small>/stories</small></div>
-      </section>
-
-      <footer class="footer">
-        <span>LoveFly.club</span>
-        <span>For those who simply love to fly.</span>
-      </footer>
+      <div class="intro-copy">
+        <strong>常客工具 × 飞行数据库</strong>
+        <p>日志、航线、里程、会籍，以及为下一次起飞准备的小工具。</p>
+      </div>
     </section>
+
+    <section class="gates" aria-label="预留功能入口">
+      <div class="gate"><small>Gate 01</small><span>Calculator</span></div>
+      <div class="gate"><small>Gate 02</small><span>Routes</span></div>
+      <div class="gate"><small>Gate 03</small><span>Flight Log</span></div>
+      <div class="gate"><small>Gate 04</small><span>Miles</span></div>
+      <div class="gate"><small>Gate 05</small><span>Airports</span></div>
+      <div class="gate"><small>Gate 06</small><span>Stories</span></div>
+    </section>
+
+    <footer class="footer">
+      <span>LoveFly.club</span>
+      <span>For those who simply love to fly.</span>
+    </footer>
   </main>
 </body>
 </html>
