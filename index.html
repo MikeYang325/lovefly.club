@@ -1,44 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f7f4ee">
-  <meta name="description" content="LOVEFLY.CLUB — For those who simply love to fly.">
-  <title>LOVEFLY.CLUB — For those who simply love to fly.</title>
+  <meta name="theme-color" content="#2B7DE9">
+  <meta name="description" content="LoveFly.club — 记录每一次起飞，也计算每一次可能。">
+  <title>LoveFly.club — For those who simply love to fly.</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="home">
-    <header class="topbar">
-      <a class="brand" href="/" aria-label="LOVEFLY.CLUB home">LOVEFLY<span>.CLUB</span></a>
-      <div class="edition">EST. 2026</div>
-    </header>
-
+  <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="flight-path" aria-hidden="true"><i></i></div>
+      <img class="hero-photo" src="./assets/hero-wing.webp" alt="高空蓝天下的银白机翼与红色翼尖">
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="hero-mark" id="hero-title">
-        <span class="love">Love</span>
-        <span class="fly">FLY<span class="dot">.</span></span>
-      </div>
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="LoveFly.club 首页">
+          LoveFly<span class="brand-dot">.</span><span class="brand-club">club</span>
+        </a>
+        <nav class="topnav" aria-label="预留导航">
+          <span>Tools</span>
+          <span>Flight Log</span>
+          <span>Stories</span>
+        </nav>
+      </header>
 
       <div class="hero-copy">
-        <p class="tagline">For those who simply love to fly.</p>
-        <p class="topics">Flights <span>·</span> Miles <span>·</span> Aircraft <span>·</span> Tools</p>
+        <p class="eyebrow">PERSONAL AVIATION JOURNAL</p>
+        <h1 id="hero-title">Love flying.<br>Keep flying.</h1>
+        <p class="hero-line">For those who simply love to fly.</p>
+      </div>
+
+      <div class="hero-meta">
+        <span>Flights · Miles · Aircraft · Tools</span>
+        <span>Made somewhere between the ground and FL400.</span>
       </div>
     </section>
 
-    <footer class="bottom">
-      <p class="signature">Made somewhere between the ground and FL400.</p>
-      <nav class="areas" aria-label="LoveFly areas">
-        <span>TOOLS</span>
-        <span>FLIGHTS</span>
-        <span>LOGBOOK</span>
-        <span>MILES</span>
-        <span>TRIPS</span>
-        <span>PROJECTS</span>
-      </nav>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-heading">
+        <p class="section-label">LoveFly.club</p>
+        <h2 id="intro-title">记录每一次起飞，<br>也计算每一次可能。</h2>
+      </div>
+      <div class="intro-copy">
+        <p>常客玩家的工具枢纽 × 硬核飞行数据库。</p>
+        <p>这里会慢慢装进飞行日志、航线、里程、会籍，以及那些为了下一次起飞做的小工具。</p>
+      </div>
+    </section>
+
+    <section class="modules" aria-label="预留功能入口">
+      <div class="module"><span>Gate 01</span><strong>Calculator</strong><small>/calculator</small></div>
+      <div class="module"><span>Gate 02</span><strong>Routes</strong><small>/routes</small></div>
+      <div class="module"><span>Gate 03</span><strong>Flight Log</strong><small>/flight-log</small></div>
+      <div class="module"><span>Gate 04</span><strong>Miles</strong><small>/earn-and-burn</small></div>
+      <div class="module"><span>Gate 05</span><strong>Airports</strong><small>/airports</small></div>
+      <div class="module"><span>Gate 06</span><strong>Stories</strong><small>/stories</small></div>
+    </section>
+
+    <footer class="footer">
+      <span>LoveFly.club</span>
+      <span>For those who simply love to fly.</span>
     </footer>
   </main>
 </body>
