@@ -15,7 +15,7 @@ body {
 
 body {
   overflow: hidden;
-  background: #178ad3;
+  background: #0f72bd;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -34,7 +34,7 @@ a {
   display: grid;
   place-items: center;
   isolation: isolate;
-  background: #178ad3;
+  background: #0f72bd;
 }
 
 .sky-photo {
@@ -44,8 +44,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 36%;
-  transform: scale(1.02);
+  object-position: 50% 50%;
 }
 
 .sky-stage::after {
@@ -54,7 +53,7 @@ a {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 46%, rgba(255,255,255,.05), transparent 46%);
+  background: linear-gradient(180deg, rgba(0, 42, 94, .06), rgba(0, 42, 94, .01) 58%, rgba(0, 42, 94, .08));
 }
 
 .sky-logo {
@@ -63,8 +62,8 @@ a {
   white-space: nowrap;
   color: #fff;
   line-height: .82;
-  text-shadow: 0 4px 34px rgba(0, 43, 94, .12);
-  transform: translateY(-2vh);
+  text-shadow: 0 4px 34px rgba(0, 43, 94, .18);
+  transform: translateY(-15vh);
 }
 
 .logo-love {
@@ -103,11 +102,11 @@ a {
 
 @media (max-width: 760px) {
   .sky-photo {
-    object-position: 52% 32%;
+    object-position: 58% 50%;
   }
 
   .sky-logo {
-    transform: translateY(-3vh);
+    transform: translateY(-16vh);
   }
 
   .logo-love {
