@@ -3,18 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0f72bd">
-  <meta name="description" content="LoveFly.club">
-  <title>LoveFly.club</title>
+  <meta name="theme-color" content="#081b2b">
+  <meta name="description" content="LoveFly.club 个人航空工具台">
+  <title>LoveFly.club — Tools</title>
+  <link rel="preload" as="image" href="./assets/background-wing.webp" fetchpriority="high">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="sky-stage" aria-label="LoveFly.club">
-    <img class="sky-photo" src="./assets/background-wing.webp" alt="高空蓝天、云海与红色翼尖机翼">
+  <main class="hub">
+    <div class="hub__image" aria-hidden="true"></div>
+    <div class="hub__grid" aria-hidden="true"></div>
+    <svg class="route-map" viewBox="0 0 900 680" fill="none" aria-hidden="true">
+      <path d="M40 585C192 520 206 430 340 449S480 580 610 488 706 293 876 252" />
+      <path d="M140 176C260 102 336 157 410 212S614 246 746 128" />
+      <circle cx="340" cy="449" r="4" /><circle cx="610" cy="488" r="4" /><circle cx="876" cy="252" r="4" />
+    </svg>
 
-    <a class="sky-logo" href="/" aria-label="LoveFly.club 首页">
-      <span class="logo-love">Love</span><span class="logo-fly">Fly</span><span class="logo-dot">.</span><span class="logo-club">club</span>
-    </a>
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="LoveFly.club 首页">
+        <span class="wordmark__love">Love</span><span class="wordmark__fly">Fly</span><span class="wordmark__dot">.</span><span class="wordmark__club">club</span>
+      </a>
+      <div class="topbar__meta"><span class="pulse"></span>个人工具台 <span class="slash">/</span> 2026</div>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro__index">LF / 001</div>
+      <h1 id="page-title">Tools</h1>
+      <p class="intro__rule">AIR TOOLS</p>
+    </section>
+
+    <section class="tool-grid" aria-label="工具列表">
+      <a class="tool-card tool-card--featured" href="https://ffldeploy.vercel.app" target="_blank" rel="noreferrer">
+        <div class="tool-card__top"><span class="tool-card__number">01</span><span class="tool-card__status">LIVE</span></div>
+        <div class="tool-card__body"><span class="tool-card__eyebrow">FLIGHT MONITOR</span><h2>飞飞乐<br>机票监控</h2><p>查询 · 日历 · 余票提醒</p></div>
+        <span class="tool-card__arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="tool-card" href="https://ffl365.vercel.app" target="_blank" rel="noreferrer">
+        <div class="tool-card__top"><span class="tool-card__number">02</span><span class="tool-card__status">LIVE</span></div>
+        <div class="tool-card__body"><span class="tool-card__eyebrow">ROUTE CALENDAR</span><h2>航线<br>日历</h2><p>海航 PLUS 航线查询</p></div>
+        <span class="tool-card__arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="tool-card" href="https://github.com/ydx123mike/ca-miles" target="_blank" rel="noreferrer">
+        <div class="tool-card__top"><span class="tool-card__number">03</span><span class="tool-card__status">GITHUB</span></div>
+        <div class="tool-card__body"><span class="tool-card__eyebrow">MILEAGE</span><h2>凤凰知音<br>里程计算</h2><p>多航段 · 舱位 · 累计</p></div>
+        <span class="tool-card__arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <footer class="footer"><span>LOVEFLY.CLUB</span><span>03 SERVICES <i aria-hidden="true">↗</i></span></footer>
   </main>
 </body>
 </html>
