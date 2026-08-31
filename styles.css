@@ -12,9 +12,10 @@ a { color:inherit; text-decoration:none; }
 .topbar,.footer { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
 .wordmark { display:inline-flex; align-items:baseline; line-height:.8; }
 .wordmark__love { font:italic clamp(48px,5.8vw,82px)/.8 var(--serif); letter-spacing:-.08em; }
-.wordmark__fly { margin-left:.06em; font:600 clamp(46px,5.5vw,78px)/.8 var(--sans); letter-spacing:-.1em; }
+.wordmark__fly { margin-left:.06em; font:600 clamp(46px,5.5vw,78px)/.8 var(--sans); letter-spacing:-.1em; transition:color .18s ease; }
 .wordmark__dot { margin-left:.04em; color:var(--red); font:700 clamp(50px,5.7vw,81px)/.65 var(--serif); }
 .wordmark__club { margin-left:.14em; color:var(--muted); font:500 clamp(11px,1.1vw,15px)/1 ui-monospace,SFMono-Regular,Menlo,monospace; }
+.wordmark:hover .wordmark__fly, .wordmark:focus-visible .wordmark__fly { color:var(--red); }
 .footer { color:var(--muted); font-size:10px; letter-spacing:.16em; }
 .pulse { display:inline-block; width:6px; height:6px; margin-right:8px; border-radius:50%; background:#64d6a0; box-shadow:0 0 0 4px rgba(100,214,160,.12); }
 .slash { color:var(--red); margin:0 8px; }
